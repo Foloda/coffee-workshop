@@ -5,27 +5,32 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --color-bg-main: #faf7f2;
-  --color-bg-surface: #ffffff;
-  --color-bg-table-head: #efe5d8;
+  --color-bg-main: #f7f5ef;
+  --color-bg-surface: #fffefa;
+  --color-bg-table-head: #eeeae1;
 
-  --color-espresso: #2b2118;
-  --color-coffee: #6f4e37;
-  --color-coffee-hover: #563b28;
-  --color-latte: #f3d5b5;
+  --color-espresso: #302d28;
+  --color-coffee: #6d6255;
+  --color-coffee-hover: #594f44;
+  --color-latte: #e6dfd2;
 
-  --color-border-light: #eee4d8;
-  --color-border-input: #cbb8a3;
+  --color-border-light: #e4dfd5;
+  --color-border-input: #d1cabd;
 
   --color-text-light: #ffffff;
 
-  --color-hero-bg: #26372d;
+  --color-hero-bg: #596158;
+  --color-card-border-bg: #747d73;
+  --color-card-bg: #e7e8e1;
 }
 
 body {
   background-color: var(--color-bg-main);
+  color: var(--color-espresso);
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
 }
 
 .container {
@@ -34,11 +39,11 @@ body {
   margin-inline: auto;
 }
 .site-header {
-  padding: 20px 0;
-  border-bottom: 2px solid var(--color-coffee);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border-input);
   position: sticky;
   top: 0;
-  background-color: var(--color-border-input);
+  background-color: rgba(247, 245, 239, 0.96);
 }
 .site-nav,
 .nav-links {
@@ -62,7 +67,7 @@ body {
   text-decoration: none;
   color: var(--color-coffee);
   padding: 12px 14px;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .nav-links a:hover {
@@ -72,7 +77,7 @@ body {
 
 .hero-section {
   margin-top: 20px;
-  border-radius: 16px;
+  border-radius: 12px;
   background-color: var(--color-hero-bg);
   overflow: hidden;
   color: var(--color-text-light);
@@ -86,7 +91,7 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 12px 16px;
-  background-color: var(--color-latte);
+  background-color: #ded7c9;
   border-radius: 8px;
   font-weight: bold;
 }
@@ -113,8 +118,8 @@ body {
 
 .card {
   overflow: hidden;
-  border-radius: 12px;
-  background-color: var(--color-latte);
+  border-radius: 10px;
+  background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border-input);
 }
 .card img {
@@ -133,7 +138,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
-  border-radius: 16px;
+  border-radius: 12px;
 }
 .video-text {
   padding: 12px 22px;
@@ -146,7 +151,7 @@ body {
 .video-section video {
   width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .filter-section {
@@ -157,8 +162,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
-  border: 2px solid var(--color-border-input);
+  border-radius: 10px;
+  border: 1px solid var(--color-border-input);
   overflow: hidden;
 }
 
@@ -168,4 +173,120 @@ body {
 }
 .right-side {
   background-color: var(--color-bg-table-head);
+}
+
+.left-side h3 {
+  padding: 8px 12px;
+  font-size: medium;
+}
+
+.right-side h3 {
+  padding: 8px 12px;
+  font-size: medium;
+}
+.rule-section {
+  margin-top: 40px;
+}
+.rule-section h2 {
+  font-size: 18px;
+}
+.rule-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.rule-card {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border-input);
+  border-top: 4px solid var(--color-card-border-bg);
+  border-radius: 8px;
+}
+
+.rule-card h3 {
+  padding: 0px 12px;
+}
+.rule-card h3 {
+  font-size: 16px;
+}
+.rule-card p {
+  padding: 0 12px;
+  font-size: 12px;
+}
+.lesson-section {
+  margin-top: 40px;
+}
+.lesson-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 50px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg-surface);
+
+  overflow: hidden;
+}
+
+caption {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  text-align: left;
+  border: 1px solid var(--color-border-input);
+}
+
+thead th {
+  background-color: var(--color-bg-table-head);
+}
+.choose-lesson {
+  background-color: var(--color-bg-table-head);
+  border: 1px solid var(--color-border-input);
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+form {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+select,
+input,
+button {
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-input);
+}
+
+button {
+  margin-top: 8px;
+  background-color: var(--color-coffee);
+  color: var(--color-text-light);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-coffee-hover);
+}
+.faq-section {
+  margin: 40px 0;
+}
+
+details {
+  border-top: 1px solid var(--color-border-input);
+  padding: 12px 0;
+}
+details p {
+  padding: 0 18px;
 }
