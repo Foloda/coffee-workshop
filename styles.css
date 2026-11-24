@@ -148,3 +148,24 @@ body {
   height: auto;
   border-radius: 12px;
 }
+
+.filter-section {
+  margin-top: 40px;
+}
+
+.recipe-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  border: 2px solid var(--color-border-input);
+}
+
+.left-side {
+  background-color: var(--color-hero-bg);
+  color: var(--color-text-light);
+}
+.right-side {
+  background-color: var(--color-bg-table-head);
+  overflow: hidden;
+}
