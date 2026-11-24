@@ -159,6 +159,7 @@ body {
   align-items: center;
   border-radius: 12px;
   border: 2px solid var(--color-border-input);
+  overflow: hidden;
 }
 
 .left-side {
@@ -167,5 +168,4 @@ body {
 }
 .right-side {
   background-color: var(--color-bg-table-head);
-  overflow: hidden;
 }
