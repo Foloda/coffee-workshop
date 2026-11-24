@@ -125,3 +125,26 @@ body {
 .card-text {
   padding: 8px 12px;
 }
+
+.video-section {
+  margin-top: 40px;
+  background-color: var(--color-hero-bg);
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px;
+}
+.video-text {
+  padding: 12px 22px;
+}
+
+.video-section figure {
+  display: block;
+  padding: 12px;
+}
+.video-section video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
